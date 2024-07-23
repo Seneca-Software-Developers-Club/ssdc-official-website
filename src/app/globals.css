@@ -1,7 +1,8 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
-@import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech&display=swap");
+  
 :root {
     --black: #1e1e1e;
     --red: #ec1e27;
@@ -19,6 +20,11 @@
 
 navbar-link.active {
     color: var(--navbar-active-link-color);
+}
+
+.navbar-link {
+    transition: background-color 0.3s ease;
+    white-space: nowrap;
 }
 
 .navbarContainer {
