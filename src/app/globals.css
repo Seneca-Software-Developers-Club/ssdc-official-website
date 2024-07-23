@@ -1,7 +1,7 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
-
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
 :root {
     --black: #1e1e1e;
     --red: #ec1e27;
@@ -17,6 +17,21 @@
 
 }
 
-.navbar-link.active {
+navbar-link.active {
+    color: var(--navbar-active-link-color);
+}
+
+.navbarContainer {
+    font-family: "Share Tech", sans-serif;
+    align-items: center;
+    margin: 0 auto;
+    margin-right: 2rem;
+}
+
+.navbar-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .link-active {
     color: var(--navbar-active-link-color);
   }
