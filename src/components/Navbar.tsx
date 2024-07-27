@@ -2,7 +2,6 @@
 
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
-import '../app/globals.css';
 
 const Navbar = () => {
   const pathname = usePathname(); // check https://nextjs.org/docs/app/api-reference/functions/use-pathname
