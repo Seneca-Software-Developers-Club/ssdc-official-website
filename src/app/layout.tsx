@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Share_Tech } from 'next/font/google';
 import "./globals.css";
 import Navbar from "../components/Navbar";  
 
-const inter = Inter({ subsets: ['latin'] });
+const shareTech = Share_Tech({ weight:'400', subsets:['latin'] });
 
 export const metadata: Metadata = {
   title: "SDDC Official Website",
@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-       <body className={inter.className}>
+       <body className={shareTech.className}>
           <Navbar/>
           {children}
        </body>
